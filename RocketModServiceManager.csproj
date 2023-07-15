@@ -13,6 +13,14 @@
         <AssemblyVersion>1.0.0</AssemblyVersion>
         <FileVersion>1.0.0</FileVersion>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Title>RocketMod Services</Title>
+        <Description>RocketMod Service System, with an event bus included. Fully static and meant as a library.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright>Copyright © 2022-2023 Pustalorc</Copyright>
+        <RepositoryUrl>https://github.com/Pustalorc/RocketModServices</RepositoryUrl>
+        <RepositoryType>Github</RepositoryType>
+        <PackageTags>RocketMod Library EventBus Services</PackageTags>
+        <PackageReleaseNotes>First release.</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
