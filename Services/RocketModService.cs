@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using Pustalorc.Libraries.RocketModServices.Services.Exceptions;
+using Pustalorc.Libraries.RocketModServices.Services.Interfaces;
 
 namespace Pustalorc.Libraries.RocketModServices.Services;
 
@@ -25,7 +26,28 @@ public static class RocketModService<T> where T : class
     /// <param name="instance">The new instance of the service, replacing the previous instance.</param>
     public static void RegisterService(T instance)
     {
+        if (instance is IService newService)
+            newService.Load();
+
+        var oldInstance = Service;
         Service = instance;
+
+        if (oldInstance is IService oldService)
+            oldService.Unload();
+    }
+
+    /// <summary>
+    /// Removes the currently registered service instance.
+    /// </summary>
+    /// <remarks>
+    /// This method should generally not be used, unless you are unloading a large service that has multiple dependencies and cannot function without them.
+    /// </remarks>
+    public static void UnregisterService()
+    {
+        if (Service is IService service)
+            service.Unload();
+
+        Service = null;
     }
 
     /// <summary>

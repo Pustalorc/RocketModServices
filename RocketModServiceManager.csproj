@@ -5,13 +5,13 @@
         <Nullable>enable</Nullable>
         <AssemblyName>Pustalorc.RocketModServices</AssemblyName>
         <RootNamespace>Pustalorc.Libraries.RocketModServices</RootNamespace>
-        <LangVersion>11</LangVersion>
+        <LangVersion>12</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>Pustalorc.RocketModServices</PackageId>
         <Authors>Pustalorc</Authors>
         <Company>Pustalorc</Company>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
-        <FileVersion>1.0.0</FileVersion>
+        <AssemblyVersion>1.1.0</AssemblyVersion>
+        <FileVersion>1.1.0</FileVersion>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <Title>RocketMod Services</Title>
         <Description>RocketMod Service System, with an event bus included. Fully static and meant as a library.</Description>
@@ -20,7 +20,7 @@
         <RepositoryUrl>https://github.com/Pustalorc/RocketModServices</RepositoryUrl>
         <RepositoryType>Github</RepositoryType>
         <PackageTags>RocketMod Library EventBus Services</PackageTags>
-        <PackageReleaseNotes>First release.</PackageReleaseNotes>
+        <PackageReleaseNotes>Added IService and changed the logic of .RegisterService so that any service that implements IService can now load/unload as need be. Additionally, .UnregisterService() has been added.</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
