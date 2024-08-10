@@ -10,9 +10,10 @@
         <PackageId>Pustalorc.RocketModServices</PackageId>
         <Authors>Pustalorc</Authors>
         <Company>Pustalorc</Company>
-        <AssemblyVersion>1.1.1</AssemblyVersion>
-        <FileVersion>1.1.1</FileVersion>
-        <Version>1.1.1</Version>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <PackageVersion>1.1.2</PackageVersion>
+        <FileVersion>1.1.2</FileVersion>
+        <Version>1.1.2</Version>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <Title>RocketMod Services</Title>
         <Description>RocketMod Service System, with an event bus included. Fully static and meant as a library.</Description>
@@ -21,7 +22,7 @@
         <RepositoryUrl>https://github.com/Pustalorc/RocketModServices</RepositoryUrl>
         <RepositoryType>Github</RepositoryType>
         <PackageTags>RocketMod Library EventBus Services</PackageTags>
-        <PackageReleaseNotes>Updated JetBrains.Annotations package, and made it private assets so projects that use this project do no automatically import and use JetBrains.Annotations</PackageReleaseNotes>
+        <PackageReleaseNotes>Fixed AssemblyVersion to use the right version. Added PackageVersion to csproj.</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
